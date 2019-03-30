@@ -16,6 +16,7 @@ def med(arr):
     if(len(arr)%2==0):
         return (arr[len(arr)/2]+arr[(len(arr)/2)-1])/2
     else :
+        return arr[len(arr)/2]
 
 if (len(temp)%2==0):
     median= (med(temp))
@@ -26,6 +27,7 @@ if (len(temp)%2!=0):
     median= (med(temp))
     q1=temp[:(len(temp)/2)]
     q2=temp[-(len(temp)/2):]
+    print ("{:.1f}").format(int(med(q2))-(int)(med(q1)))
 
 
 # 6
